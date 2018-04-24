@@ -1,8 +1,16 @@
 # UNDERSTANDING `this`
 
+## Description
+
 There isn't a single word that describes `this` well, so I just think of it as a special variable that changes depending on the situation. Those different situations are captured below.
 
-## **Case 1:** 
+## Preview
+
+[![UNDERSTANDING this Preview](https://raw.githubusercontent.com/jakepintu/UNDERSTANDING-this/master/UNDERSTANDING-this.png)](https://jakepintu.github.io/UNDERSTANDING-this/)
+
+**[View Live Preview](https://jakepintu.github.io/UNDERSTANDING-this/)**
+
+## Case 1: 
 ### In a regular function (or if you're not in a function at all), `this` points to `window`. This is the default case.
 
 ```javascript
@@ -18,7 +26,7 @@ logThis(); // window
 
 
 
-## **Case 2:** 
+## Case 2:
 ### When a function is called as a method, `this` points to the object that's on the left side of the dot.
 
 ```javascript
@@ -49,7 +57,7 @@ myObject.myMethod(); // myObject
 
 
 
-## **Case 3:** 
+## Case 3:
 ### In a function that's being called as a constructor, `this` points to the object that the constructor is creating.
 
 ```javascript
@@ -63,7 +71,7 @@ console.log(jake); // {name: 'jake'}
 
 
 
-## **Case 4:** 
+## Case 4:
 ### When you explicitly set the value of `this` manually using `bind`, `apply`, or `call`, it's all up to you.
 
 ```javascript
@@ -88,7 +96,7 @@ boundOnce.call({name: 'why even try?'});
 
 
 
-## **Case 5:** 
+## Case 5:
 ### In a callback function, apply the above rules methodically.
 
 ```javascript
