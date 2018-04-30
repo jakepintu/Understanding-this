@@ -105,8 +105,8 @@ In the global scope, when the code is executing in the browser, all global varia
 
 Thus:
 
-```
-	    var firstName = "Peter",
+```javascript
+    var firstName = "Peter",
     lastName = "Ally";
 ​
     function showFullName () {
